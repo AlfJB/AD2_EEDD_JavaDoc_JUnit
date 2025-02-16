@@ -1,5 +1,10 @@
 package Aplicacion;
 
+import Operaciones.Division;
+import Operaciones.Multiplicacion;
+import Operaciones.Resta;
+import Operaciones.Suma;
+
 import java.util.Scanner;
 
 /**
@@ -52,10 +57,10 @@ public class MenuOpcionesCalculadora {
                     System.out.print("Ingrese el dividendo: ");
                     num1 = scanner.nextDouble();
                     System.out.print("Ingrese el divisor: ");
-
+                    num2 = scanner.nextDouble();
+                    System.out.println("Resultado: " + Division.dividir(num1,num2));
 
             }
-
         }
     }
 }
